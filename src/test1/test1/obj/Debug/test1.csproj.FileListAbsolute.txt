@@ -16,3 +16,14 @@ D:\Repos\easy-build-nt5\src\test1\test1\obj\Debug\test1.csproj.GenerateResource.
 D:\Repos\easy-build-nt5\src\test1\test1\obj\Debug\test1.csproj.CoreCompileInputs.cache
 D:\Repos\easy-build-nt5\src\test1\test1\obj\Debug\Easy-Patcher.exe
 D:\Repos\easy-build-nt5\src\test1\test1\obj\Debug\Easy-Patcher.pdb
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\bin\Debug\Easy-Patcher.exe.config
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\bin\Debug\Easy-Patcher.exe
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\bin\Debug\Easy-Patcher.pdb
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\test1.csproj.AssemblyReference.cache
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\test1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\test1.Form1.resources
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\test1.Properties.Resources.resources
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\test1.csproj.GenerateResource.cache
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\test1.csproj.CoreCompileInputs.cache
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\Easy-Patcher.exe
+C:\Users\Jayden\Documents\GitHub\src\test1\test1\obj\Debug\Easy-Patcher.pdb

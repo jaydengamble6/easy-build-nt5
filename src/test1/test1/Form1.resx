@@ -117,19 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>NOTE: This Patcher is in TESTING and may be unstable!
-
-Welcome to Easy-Patcher!
-
-Here you can View, Download and Apply Community Patches
-for the Windows 2003 SP0 Source Code. I will update accordingly 
-with any updates released to Patches here.
-
-If you have suggestions or feedback for Easy-Patcher then let me know on Github,
-
-Any help, support or ideas regarding the Source, visit 4chan /g/ /wxp/ board.</value>
-  </data>
   <data name="richTextBox2.Text" xml:space="preserve">
     <value>Windows 2003 SP0 Prepatched Source files:
 Requirement Level: HIGHLY RECOMMENDED           Latest version: v10a
@@ -151,48 +138,10 @@ For further patch notes and information see:  https://rentry.co/build-win2k3
 This Patch is provided by the 4chan /g/ Community and with permission to host
 and download with Easy-Build/Easy-Patcher.</value>
   </data>
-  <data name="richTextBox3.Text" xml:space="preserve">
-    <value>------------------------------------------------------------------------------------------------
-                 THIS PATCH IS EXPERIMENTAL AND MAY BE UNSTABLE
-------------------------------------------------------------------------------------------------
-Winlogon Source Port from Windows 2000 for Windows 2003:
-Requirement Level: OPTIONAL/TESTING            Version: 3c
-
-To view a list of what's been ported, read the /g/ archived thread here:
-https://archive.rebeccablacktech.com/g/thread/78500072/#78504881
-
-Known Issues: 
-Many.. you may encounter delays with start-up and login due to missing 
-functions in the ported Winlogon, warnings and errors upon build (especially
-on AMD64 targeted builds.
-
-Read Me from patch:
-If you change build arch from x86 to amd64 or vice-versa, make sure to edit the two 
-processorArchitecture fields inside: 
-
-"%NTROOT%\ds\security\gina\winlogon\windowslogon_default.manifest"
-
-Group-policy changes hopefully shouldn't be needed as of v2b, thanks to 
-wlx.cSetupPasswordPolicy function add
-
-If building for amd64 make sure to bcz inside "ds\security\gina\" first,
-and afterwards do an additional bcz inside winlogon, to ensure that the
-msgina and userenv projects are built before winlogon is (as we need to
-update lib files for those projects, to make sure winlogon uses updated
-SP1 import ordinal numbers)
-
-If copying into an existing SP1 build only copy the winlogon.exe -
-msgina and userenv aren't updated to SP1 level, only the ordinals are.
-it should be fine to use them inside our own custom amd64 builds though.
-
-
-This patch is provided by the 4chan Community with permission to host 
-and download with Easy-Build/Easy-Patcher. </value>
-  </data>
   <data name="richTextBox4.Text" xml:space="preserve">
     <value>Missing x86 RTM Files for Postbuilding:
 Requirement Level: HIGHLY RECOMMENDED   
-Latest Version: win2003_x86-missing-binaries_v2
+Latest Version: win2003_x86-missing-binaries_v2.7z
 
 These are a list of prebuilt files, extracted from different ISO SKUs for 2003 and XP.
 To use these files, copy the contents of the archive to your 'Postbuild' directory:
@@ -201,8 +150,35 @@ e.g D:\binaries.x86fre
 
 NOTE: DON'T REPLACE ANY FILES!
 
-If you have chosen to use the Winlogon200X source, DON'T replace the winlogon.exe and winlogon.pdb
+If you have chosen to use the WinLogon decompilation, DON'T replace the winlogon.exe and winlogon.pdb
 
 This Patch is provided by the anons at the  /g/ Community</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>NOTE: This Patcher is in TESTING and may be unstable!
+
+Welcome to Easy-Patcher!
+
+Here you can View, Download and Apply Community Patches
+for the Windows 2003 SP0 Source Code. I will update accordingly 
+with any updates released to Patches here.
+
+If you have suggestions or feedback for Easy-Patcher then let me know on Github,
+
+Any help, support or ideas regarding the Source, visit 4chan /g/ /wxp/ board.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>------------------------------------------------------------------------------------------------
+                 THIS PATCH IS EXPERIMENTAL AND MAY BE UNSTABLE
+------------------------------------------------------------------------------------------------
+WinLogon decompiled from Windows XP for Windows 2003:
+Requirement Level: OPTIONAL/TESTING            Version: 1
+
+Known Issues: 
+Many.. also the smart card feature is gone so don't even try, also untested but from
+what I've read this most likely will NOT be compatible with AMD64
+
+This patch is provided by the 4chan Community with permission to host 
+and download with Easy-Build/Easy-Patcher. </value>
   </data>
 </root>
