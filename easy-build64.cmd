@@ -1,6 +1,8 @@
 @echo off
 color 03
 Title Easy-Build Environment For Razzle and OpenXP Patches
+echo Warning, I have not modified easy-build64 yet, so expect stuff to be broken.
+pause
 echo Loading (AMD64 BUILD)..
 REM
 REM if NOT exist %~dp0\prebuild.cmd goto easypatcherinit

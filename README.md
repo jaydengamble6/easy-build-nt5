@@ -1,24 +1,24 @@
-# Easy-Build GUI For Razzle (AMD64 Update)
+# Easy-Build GUI For Razzle
 Just a small script I made and use when building NT5 for a quick lazy mans build. Adapted so others can use.
 
 There will be updates over time, I need feedback and suggestions to make improvements
 THIS IS IN TESTING, YOU MAY ENCOUNTER ERRORS
 NOTE: This isn't a new build environment, it is a wrapper for Razzle
 
-Join the Matrix group!
+Join the Telegram group!
 
-https://matrix.to/#/!febkSwamiedCsfevDe:matrix.org?via=matrix.org
+http://t.me/joinchat/TTfPwUpDx4b0ywMFLSjKyg
 
-![](https://github.com/Empyreal96/easy-build-nt5/raw/main/easy-build.png)
+![](https://github.com/jaydengamble6/easy-build-nt5/raw/main/easy-build.png)
 
-![](https://github.com/Empyreal96/easy-build-nt5/raw/main/easy-patcher.png)
+![](https://github.com/jaydengamble6/easy-build-nt5/raw/main/easy-patcher.png)
 
 
 
 ```
-** What's New This Update?**
+** What's new with this update?**
 
-- Added first attempt at a fully Automatic Build through (Prebuild to ISO Creation)
+- Nothing yet lol
 
 ```
 

@@ -7,11 +7,11 @@ REM if NOT exist %~dp0\prebuild.cmd goto easypatcherinit
 REM
 REM
 REM Below is just current internal build version and 4chan patches
-set "EASY_PATCHER_VERSION=0.2.2"
-set "EASY_BUILD_RELEASE=v0.2"
+set "EASY_PATCHER_VERSION=0.3.0"
+set "EASY_BUILD_RELEASE=v0.3"
 set "CHAN_PREPATCHED_LATEST=win2003_prepatched_v10a"
-set "CHAN_WINLOGON_VERSION=winlogon200X_v3c"
-set "CHAN_MISSING_FILES_VER=win2003_x86-missing-binaries_v2"
+set "CHAN_WINLOGON_VERSION=decompiled_XPSP1_winlogon"
+set "CHAN_MISSING_FILES_VER=win2003_x86-missing-binaries_v2.7z"
 REM
 REM Here is the 'system' to check for requirements. I say system, its just a bunch of if statements 
 REM
@@ -128,7 +128,7 @@ echo Over time I will add more capabilities to what this tool can do.
 echo --------------------------------------------------------------------------------------------
 echo REQUIREMENTS
 echo.
-echo - Loads of free Disk Space.
+echo - Loads of free Disk Space (preferrably over 60GB on an empty drive).
 echo - Ideally to have already followed the guide to prep the source.
 echo.
 pause 
@@ -309,7 +309,7 @@ Title Easy-Build Environment For Razzle and OpenXP Patches -- AUTO BUILD: %_NTDR
 echo.
 echo Easy-Build will run through Build, postbuild and oscdimg.
 echo.
-echo Please type the SKU you want to build. (e.g pro, ads)
+echo Please type the SKU you want to build. (e.g pro, per, srv)
 echo.
 echo Easy-Build will presume win2003_prepatched_v10a has already been applied with the Patcher.
 echo If "win2003_x86-missing-binaries_v2.7z" is NOT already inside %RazzleToolPath%\TEMP it 
@@ -384,7 +384,7 @@ if not exist "%~dp0\wget.exe" echo Please copy WGET.EXE to %RazzleToolPath% && g
 Title Easy-Build Environment For Razzle and OpenXP Patches -- AUTO BUILD: %_NTDRIVE%%_NTROOT%
 echo.
 echo Easy-Build will run through Build, postbuild and oscdimg.  ('dirty' build)
-echo Please type the SKU you want to build. (e.g pro, ads)
+echo Please type the SKU you want to build. (e.g pro, per, srv)
 echo.
 echo.
 echo Easy-Build will presume win2003_prepatched_v10a has already been applied with the Patcher.
@@ -512,7 +512,7 @@ cd ..
 cls
 echo ----------------------------------------------------------------------
 echo This section we can clean build certain components of the source
-echo So if you want to rebuild Notepad you would type:
+echo So if you wanted to rebuild Notepad you would type:
 echo.
 echo shell\osshell\accesory\notepad
 echo ----------------------------------------------------------------------
@@ -621,7 +621,7 @@ REM
 REM TODO: Add option for user to choose x86 or x64 building on startup.
 REM For nkw I am waiting until the process becomes stable or if I decide to make my patcher.
 REM
-echo AMD64 Building: Not Supported Yet
+echo AMD64 Building: Working, but unstable.
 echo ----------------------------------------------------------------
 echo For the 4chan guide visit: (Massive Credit to Anons over there)
 echo https://rentry.co/build-win2k3
@@ -629,6 +629,9 @@ echo.
 echo For usage on specific Razzle Build Env commands goto:
 echo https://empyreal96.github.io/build-env-info
 echo.
+echo Windows Update on 'srv' works better than 'pro' does (see 'https://i430vx.net/files/wsusstuff/' for getting WSUS working.
+echo.
+echo To disable the Timebomb set the days in Options to 0.
 echo For other help and info, visit 4chan/g /wxp/
 echo Do it for XP-tan
 pause
